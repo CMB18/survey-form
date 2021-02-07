@@ -1,7 +1,7 @@
 <html laug="en"> 
-   
+
     <head>
-        
+        <link rel="stylesheet" type="text/css" href="css.survey.css">
     
     </head>
    
@@ -15,14 +15,45 @@
         </p>
   
         <form id="survey-form">
-            name: <input type="text" id="name" required></input><br>
-            email:  <input type="email" id="email" required> </input><br>
-            Phone number: <input type="number" id="number" min="10" max="10" required></input><br>
+            <label id="name-label">name</label>
+            <input type="text" id="name" required placeholder="enter name here"></input><br>
+            <label id="email-label"> email: </label>
+            <input type="email" id="email" required placeholder="enter email here"> </input><br>
+            <label id="number-label"> phone number:</label>
+            <input type="number" id="number" min="10" max="10" required placeholder="number"></input><br>
                
+            <label for="cars">Choose a car:</label>
+
+            <select id="dropdown" name="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+            </select>
+
+            <p>Please select your gender:</p>
+            <input type="radio" id="male" name="name" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="name" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="name" value="other">
+            <label for="other">Other</label>
+          <br>
+          
+          <p>Please select your gender:</p>
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+          <label for="vehicle1"> I have a bike</label><br>
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+          <label for="vehicle2"> I have a car</label><br>
+          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+          <label for="vehicle3"> I have a boat</label><br>
+          
+          <textarea placeholder="Additiional Comments"></textarea><br>
         
-            <input type="submit" id="submit">
+          
+          <input type="submit" id="submit">
        
-        </form>   
+           
 
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
    
